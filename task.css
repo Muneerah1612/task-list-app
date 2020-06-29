@@ -1,0 +1,121 @@
+/* -I want to play with animation, drop down menu and sliding
+   -  my image is not displaying, let me try cloudinary 
+   - due date 
+   - change to a background image instead
+   - okay, an idea came to my mind. How about small grid boxes,
+   on clicking them, the task and due date is displayed, 
+     it can have like a check box that will indicate that
+      it has been completed and the background color or a line will be on it 
+      UPDATE: did not try animation and the likes because of time constraint,did not also bother to upload image
+*/
+
+body {
+    padding:0;
+    margin : 0 auto;
+    font-family: fantasy;
+    font-style: normal;
+    background-image: linear-gradient(135deg,#094f6e,#e4f5ff, #96c7d5 );
+   /* color: #022534;
+    background-color: #96c7d5; */
+}
+
+
+header {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 0px;
+    
+    color:rgba(9, 9, 44,0.8);
+    height: 100px;
+    opacity: 0.7;
+}
+form {
+    text-align: center;
+}
+/*
+.task-list  {
+     
+     margin: auto;
+     text-align: center;
+     
+
+    
+
+} */
+form input {
+    
+    border-radius: 6px;
+    text-align: center;
+    width:250px;
+    font-style: oblique;
+    font-weight: bold;
+    
+
+}
+.options {
+    display:none;
+}
+/*
+.task-box {
+    float:right;
+    border: 1px solid #094f6e;
+    border-radius: 4px;
+    font-size: medium;
+    
+    
+
+}*/
+.task-box {
+    
+    float:right;
+    
+}
+.task {
+    float:right;
+    
+    
+}
+.task {
+    display:grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 80px 80px;
+    grid-gap: 15px;
+    transition: all 0.5s ease;
+}
+.task-list li {
+    list-style-type: none;
+    background-color: rgb(123, 196, 214);
+    border:1px solid #343c3f;
+    border-radius: 4px;
+    
+    
+}
+.task-list button {
+    background-color: rgb(40, 141, 133);
+    font-family: sans-serif;
+    cursor: pointer;
+    
+    
+    
+     
+}
+ button:hover {
+        background-color: rgb(93, 127, 219);
+        color: white;
+}
+ button:active {
+    background-color: rgba(182, 228, 228, 0.685);
+    color: #96c7d5;
+}
+.completed {
+    text-decoration: line-through;
+    text-decoration-color:white;
+    text-transform: uppercase;
+    
+    
+}
+#render {
+    color: #094f6e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+}
